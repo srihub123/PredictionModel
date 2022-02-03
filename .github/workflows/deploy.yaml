@@ -24,6 +24,8 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          echo "MODEL METRICS"
+          cat metrics.txt
           # Post reports as comments in GitHub PRs
-          cat results.txt >> report.md
-          cml send-comment report.md
+          #cat results.txt >> report.md
+          #cml send-comment report.md
